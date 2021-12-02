@@ -44,6 +44,7 @@ pedantic)
 	export MAKE_TARGETS=all
 	;;
 esac
+make -C contrib/scalar test
 
 # Any new "test" targets should not go after this "make", but should
 # adjust $MAKE_TARGETS. Otherwise compilation-only targets above will
